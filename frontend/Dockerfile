@@ -14,7 +14,7 @@ RUN npm ci
 COPY . .
 
 # Build arguments for backend IP detection
-ARG BACKEND_HOST
+ARG BACKEND_HOST=172.17.0.3
 ARG BACKEND_PORT=8080
 
 # Install curl for IP detection
